@@ -1,0 +1,52 @@
+
+## sort1 uses: Bubble Sort
+
+## How do you know?:
+This Sort exhibits an omega of n best-case scenario and
+an n^2 worst-case scenario. During a random sort,
+Bubble Sort can be particularly slow due to the necessity
+of traversing all elements twice (n^2 times).
+
+## sort2 uses: Merge Sort
+
+## How do you know?: Merge Sort demonstrates an omega
+(n log n) best-case complexity and an O (n log n) worst-case
+complexity, which surpasses the efficiency of n^2 (seen in Selection Sort).
+During a random sort, Merge Sort exhibits unparalleled speed due to
+its recursive approach that subdivides larger data sets into smaller,
+manageable segments.
+
+## sort3 uses: Selection Sort
+
+## How do you know?: Selection Sort's best-case and worst-case
+complexities are both Big Omega of n^2 and Big O of n^2.
+Amid a random sort, Selection Sort stands as the second swiftest
+method (following Merge Sort) to complete the sorting process.
+
+
+## TEST NOTES: ##
+
+1. sorted small
+sort1: time ./sort1 sorted5000.txt, real    0m0.023s
+sort2: time ./sort2 sorted5000.txt, real    0m0.020s
+sort3: time ./sort3 sorted5000.txt, real    0m0.070s
+
+2. sorted large
+sort1: time ./sort1 sorted50000.txt, real   0m1.095s
+sort2: time ./sort2 sorted50000.txt, real   0m1.121s
+sort3: time ./sort3 sorted50000.txt, real   0m7.151s
+
+3. reversed small
+sort1: time ./sort1 reversed5000.txt, real  0m0.069s
+sort2: time ./sort2 reversed5000.txt, real  0m0.037s
+sort3: time ./sort3 reversed5000.txt, real  0m0.049s
+
+4. random small (multiple tests for each sort)
+sort1: time ./sort1 random5000.txt, real    0m0.087s
+sort2: time ./sort2 random5000.txt, real    0m0.027s
+sort3: time ./sort3 random5000.txt, real    0m0.047s
+
+5. random large (multiple tests for each sort)
+sort1: time ./sort1 random50000.txt, real   0m7.550s
+sort2: time ./sort2 random50000.txt, real   0m0.895s
+sort3: time ./sort3 random50000.txt, real   0m4.018s
