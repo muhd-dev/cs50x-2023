@@ -1,0 +1,18 @@
+Times:
+
+10 simulations: TODO: 0m0.023s & 0m0.022s
+100 simulations: TODO: 0m0.023s & 0m0.022s
+1000 simulations: TODO: 0m0.078s & 0m0.029s
+10000 simulations: TODO: 0m0.086s & 0m0.0105s
+100000 simulations: TODO: 0m0.657s & 0m0.700s
+1000000 simulations: TODO: 0m6.735s & 0m6.692s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?:
+TODO: Simulations with N = 100000 & 1000000 because they have values of countries with a
+0% chance of winning the world cup.
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?:
+TODO: I think 1000 simulations
