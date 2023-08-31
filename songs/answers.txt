@@ -1,0 +1,17 @@
+# Muhammad Idoniwako
+# cs50x Lab 7 Songs
+# Aug 31, 2023
+
+# TODO
+
+...
+
+1: Characterizing a listener's audio aura based on their top 100 songs involves calculating
+average attributes like energy, valence, and danceability, but this approach might overlook
+diverse musical tastes and the varying emotional impact of songs within playlists,
+necessitating a more personalized and nuanced analysis.
+
+2:  To improve audio aura calculation, I propose considering weighted averages,
+song context, sentiment analysis of lyrics, real-time user input, and other musical features
+as this could provide a more accurate reflection of the listener's evolving emotions and
+preferences throughout the year.
