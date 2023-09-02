@@ -1,0 +1,86 @@
+<!-- Muhammad Idoniwako
+cs50x Lab 8 Trivia
+August 31 2023 -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function(){
+                // Part 1
+                let correctButton = document.querySelector('#correct');
+                let correctMessage = document.querySelector('#answer-text');
+                correctButton.addEventListener('click', function(){
+                    correctButton.style.backgroundColor = 'green';
+                    correctMessage.innerHTML = 'Correct!';
+                    correctMessage.style.color = 'green';
+                });
+
+                let wrongButtons = document.querySelectorAll('.wrong');
+                for (let i = 0; i < wrongButtons.length; i++)
+                {
+                    wrongButtons[i].addEventListener('click', function() {
+                        this.style.backgroundColor = 'red';
+                        correctMessage.innerHTML = 'Incorrect!';
+                        correctMessage.style.color = 'red';
+                    })
+                }
+
+                // Part 2
+                let responseButton = document.querySelector('#response-button');
+                let responseMessage = document.querySelector("#response-answer-text");
+                responseButton.addEventListener('click', function(){
+                       let responseInput = document.querySelector('#response-answer');
+                       if(responseInput.value === "United States"){
+                            responseInput.style.color = 'green';
+                            responseMessage.innerHTML = 'Correct!';
+                            responseMessage.style.color = 'green';
+                       }
+                       else{
+                            responseInput.style.color = 'red';
+                            responseMessage.innerHTML = 'Incorrect!';
+                            responseMessage.style.color = 'red';
+                       }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the approximate ratio of people to cars in Nigeria?</h3>
+
+                <button class="wrong">10 people per 1 car</button>
+                <button class="wrong">3 people per 1 car</button>
+                <button class="wrong">1 person per 1 car</button>
+                <button class="wrong">1 person per 5 cars</button>
+                <button id="correct">2 people per 7 cars</button>
+                <p id="answer-text"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Which country did the internet begin?</h3>
+
+                <input type="text" id="response-answer" />
+                <button type="submit" id="response-button">Check Answer</button>
+                <p id="response-answer-text"></p>
+            </div>
+
+        </div>
+    </body>
+</html>

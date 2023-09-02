@@ -1,0 +1,73 @@
+<!-- Muhammad Idoniwako
+cs50x PSET 8 Homepage
+August 31 2023 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="/styles.css" rel="stylesheet" crossorigin="anonymous">
+        <link rel="stylesheet" href="/media_query.css" crossorigin="anonymous">
+        <title>CS50x Home</title>
+    </head>
+
+    <body>
+            <div class="video-wrapper">
+                <video class="myVideo">
+                    <source src="/media/cs50.mp4" type="video/mp4">
+                </video>
+                <div class="overlay" id="fadeOut">
+                    <div class="px-4 py-5 my-5 text-center">
+                        <img class="d-block mx-auto mb-4" src="/media/ddb.png" alt="" width="72" height="57">
+                        <h1 class="display-5 fw-bold text-body-emphasis" id="heading">This is CS50x</h1>
+                        <div class="col-lg-6 mx-auto">
+                          <p class="lead mb-4" id="paragraph">This website showcases what I learned in HTML, CSS, and JS lectures.</p><p> Click play before exploring!</p>
+                          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                            <div class="main-content">
+                                <div class="controlers">
+                                    <button type="button" class="play btn btn-outline-warning">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" id="playPauseButton" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+                                            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <nav id="navbar">
+                <div class="container">
+                    <div class="logo" id="pag">
+                        <span>CS50x Homepage</span>
+                    </div>
+                    <ul>
+                        <li><a href="/index.html">HOME</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="/tips.html">TIPS</a></li>
+                        <li><a href="/search.html">SEARCH</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section id="landing">
+                <div class="container">
+                </div>
+            </section>
+
+            <!-- <footer>
+                <div class="container">
+                    <p>Footer content here.</p>
+                </div>
+            </footer> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="/script.js"></script>
+    </body>
+</html>
